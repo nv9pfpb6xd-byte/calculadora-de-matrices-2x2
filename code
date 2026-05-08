@@ -1,0 +1,107 @@
+private void btnSuma_Click(object sender, EventArgs e)
+{
+    try
+    {
+        int A11 = int.Parse(txtA11.Text);
+        int A12 = int.Parse(txtA12.Text);
+        int A21 = int.Parse(txtA21.Text);
+        int A22 = int.Parse(txtA22.Text);
+
+        int B11 = int.Parse(txtB11.Text);
+        int B12 = int.Parse(txtB12.Text);
+        int B21 = int.Parse(txtB21.Text);
+        int B22 = int.Parse(txtB22.Text);
+
+        int R11 = A11 + B11;
+        int R12 = A12 + B12;
+        int R21 = A21 + B21;
+        int R22 = A22 + B22;
+
+        txtR11.Text = R11.ToString();
+        txtR12.Text = R12.ToString();
+        txtR21.Text = R21.ToString();
+        txtR22.Text = R22.ToString();
+    }
+    catch
+    {
+        MessageBox.Show("Ingresa solo números ");
+    }
+}
+
+private void btnResta_Click(object sender, EventArgs e)
+{
+    try
+    {
+        int A11 = int.Parse(txtA11.Text);
+        int A12 = int.Parse(txtA12.Text);
+        int A21 = int.Parse(txtA21.Text);
+        int A22 = int.Parse(txtA22.Text);
+
+        int B11 = int.Parse(txtB11.Text);
+        int B12 = int.Parse(txtB12.Text);
+        int B21 = int.Parse(txtB21.Text);
+        int B22 = int.Parse(txtB22.Text);
+
+        int R11 = A11 - B11;
+        int R12 = A12 - B12;
+        int R21 = A21 - B21;
+        int R22 = A22 - B22;
+
+        txtR11.Text = R11.ToString();
+        txtR12.Text = R12.ToString();
+        txtR21.Text = R21.ToString();
+        txtR22.Text = R22.ToString();
+    }
+    catch
+    {
+        MessageBox.Show("Ingresa solo números ");
+    }
+}
+
+private void btnMultiplicar_Click(object sender, EventArgs e)
+{
+    try
+    {
+        int A11 = int.Parse(txtA11.Text);
+        int A12 = int.Parse(txtA12.Text);
+        int A21 = int.Parse(txtA21.Text);
+        int A22 = int.Parse(txtA22.Text);
+
+        int B11 = int.Parse(txtB11.Text);
+        int B12 = int.Parse(txtB12.Text);
+        int B21 = int.Parse(txtB21.Text);
+        int B22 = int.Parse(txtB22.Text);
+
+        int R11 = (A11 * B11) + (A12 * B21);
+        int R12 = (A11 * B12) + (A12 * B22);
+        int R21 = (A21 * B11) + (A22 * B21);
+        int R22 = (A21 * B12) + (A22 * B22);
+
+        txtR11.Text = R11.ToString();
+        txtR12.Text = R12.ToString();
+        txtR21.Text = R21.ToString();
+        txtR22.Text = R22.ToString();
+    }
+    catch
+    {
+        MessageBox.Show("Ingresa solo números ");
+    }
+}
+
+private void btnLimpiar_Click(object sender, EventArgs e)
+{
+    txtA11.Clear();
+    txtA12.Clear();
+    txtA21.Clear();
+    txtA22.Clear();
+
+    txtB11.Clear();
+    txtB12.Clear();
+    txtB21.Clear();
+    txtB22.Clear();
+
+    txtR11.Clear();
+    txtR12.Clear();
+    txtR21.Clear();
+    txtR22.Clear();
+}
